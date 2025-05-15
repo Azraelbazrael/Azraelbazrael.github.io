@@ -20,7 +20,7 @@
 .navbar ul li{
     display: inline-block;
     position: relative;
-    /*height: fit-content;*/
+    margin-right:3%;
 }
 
 .navbar ul li a{
