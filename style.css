@@ -4,49 +4,61 @@
     font-family: monospace;
 }
 
-ul{
+/*-- NAVBAR --*/
+.navbar{
+    position:sticky;
     list-style: none;
-    background-color: rgb(22, 128, 128);
+    background-color: rgb(50, 135, 45);
+    text-align: right;
+    padding: 2%;
+}
+.navbar ul{
+    margin-left: 5px;
+    
 }
 
-ul li{
+.navbar ul li{
     display: inline-block;
     position: relative;
-
+    /*height: fit-content;*/
 }
 
-ul li a{
+.navbar ul li a{
     display:block;
-    padding: 20px, 25px;
-    color: rgb(255, 228, 228);
+    
+    color: rgb(222, 252, 212);
     text-decoration: none;
-    text-align: center;
-    font-size: 30px;
+    font-size: 25px;
+    margin-inline: 3px;
+    
 }
 
-ul li ul.dropdown li{
+.navbar ul li ul.dropdown li{
     display: block;
     
 }
 
-ul li ul.dropdown{
+.navbar ul li ul.dropdown{
     width: 100%;
+    padding: 3%;
+    /*margin:3%;*/
     background-color: black;
     position:absolute;
-    z-index: 999;
+    overflow:auto;
+    /*z-index: 999*/
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     display: none;
     
 }
-ul li ul.dropdown a{
+.navbar ul li ul.dropdown a{
     font-size: 20px;
-    text-align: left;
 }
-ul li a:hover{
+.navbar ul li:hover{
     background-color: rgb(94, 199, 199);
     
 }
 
-ul li:hover ul.dropdown{
+.navbar ul li:hover ul.dropdown{
     display: block;
     
 }
